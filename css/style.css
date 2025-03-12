@@ -1,0 +1,31 @@
+:root {
+    --pervui-color: #212121;
+    --vtoroi-color: #757575;
+    --acent-color: #2196f3;
+    --background-color: #f5f4fa;
+    --tretiy-color: #ffffff;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--pervui-color);
+  }
+  
+  header {
+    background-color: var(--tretiy-color);
+  }
+  
+  a {
+    color: var(--prevui-color);
+  }
+  
+  button {
+    background-color: var(--acent-color);
+    color: var(--white-color);
+  }
+  
+  footer {
+    background-color: var(--pervui-color);
+    color: var(--white-color);
+  }
+  
