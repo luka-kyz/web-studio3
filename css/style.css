@@ -22,6 +22,13 @@ header {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+.header-link:hover {
+  color: var(--accent-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
 .header-link {
   color: var(--primary-color);
   font-family: Roboto, sans-serif;
@@ -81,6 +88,11 @@ header {
   line-height: normal;
   letter-spacing: 0.28px;
 }
+.header-contacts {
+  margin-left: auto;
+  display: flex;
+  gap: 50px;
+}
 .header-contacts-item-blue {
   color: var(--accent-color);
   font-family: Roboto;
@@ -106,7 +118,6 @@ header {
   align-items: center;
 }
 .hero {
-  width: 1600px;
   height: 600px;
   flex-shrink: 0;
   background: #2f303a;
@@ -146,8 +157,8 @@ header {
   margin-top: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .plan {
   background: var(--background-color);
@@ -163,11 +174,11 @@ header {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .plan-list {
   display: flex;
   gap: 30px;
-  margin-top: 50px;
 }
 .plan-text {
   width: 270px;
@@ -196,10 +207,16 @@ header {
   line-height: normal;
   letter-spacing: 1.08px;
 }
+.three-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
 .three-photo {
-  background: url(./img/1.webp) lightgray 50% / cover no-repeat;
-  background: url(./img/2.webp) lightgray 50% / cover no-repeat;
-  background: url(./img/3.webp) lightgray 50% / cover no-repeat;
+  width: 370px;
+  height: 294px;
+  flex-shrink: 0;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
 .team {
   background: var(--background-color);
@@ -334,15 +351,19 @@ footer {
   padding-top: 50px;
   padding-bottom: 94px;
 }
-.list-button-blue {
-  width: 73px;
-  height: 38px;
-  flex-shrink: 0;
+.list-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-content: center;
+}
+.list-button:hover {
   border-radius: 4px;
   background: var(--accent-color);
-  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
-    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-  color: var(--white-color);
+  width: 125px;
+  height: 38px;
+  flex-shrink: 0;
+  color: #212121;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -350,6 +371,10 @@ footer {
   font-weight: 500;
   line-height: 26px; /* 162.5% */
   letter-spacing: 0.48px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 .list-button {
   border-radius: 4px;
@@ -365,9 +390,15 @@ footer {
   font-weight: 500;
   line-height: 26px; /* 162.5% */
   letter-spacing: 0.48px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 .info {
   background: var(--white-color);
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 .info-name {
   color: var(--primary-color);
@@ -378,6 +409,17 @@ footer {
   line-height: 36px; /* 200% */
   letter-spacing: 1.08px;
   width: 322px;
+  padding-bottom: 4px;
+}
+.info-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.info-box {
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-right: 24px;
 }
 .info-text {
   color: var(--secondary-color);
