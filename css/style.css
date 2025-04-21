@@ -22,6 +22,24 @@ header {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+.header-contacts-link:hover {
+color: var(--accent-color);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.28px;
+}
+.header-contacts-link {
+color: var(--secondary-color);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.28px;
+}
 .header-link:hover {
   color: var(--accent-color);
   font-family: Roboto, sans-serif;
@@ -324,8 +342,17 @@ footer {
   letter-spacing: 0.42px;
   margin-top: 20px;
 }
+.footer-contacts-link:hover {
+  color: var(--accent-color);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
 .footer-contacts-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--secondary-color);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
