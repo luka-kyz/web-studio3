@@ -23,22 +23,22 @@ header {
   padding-bottom: 25px;
 }
 .header-contacts-link:hover {
-color: var(--accent-color);
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.28px;
+  color: var(--accent-color);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
 }
 .header-contacts-link {
-color: var(--secondary-color);
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.28px;
+  color: var(--secondary-color);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
 }
 .header-link:hover {
   color: var(--accent-color);
@@ -239,7 +239,7 @@ letter-spacing: 0.28px;
 .team {
   background: var(--background-color);
   padding-top: 94px;
-  padding-bottom: 124px;
+  padding-bottom: 94px;
 }
 .team-list {
   display: flex;
@@ -308,8 +308,6 @@ button {
 footer {
   background-color: var(--primary-color);
   color: var(--white-color);
-  width: 1600px;
-  height: 252px;
   flex-shrink: 0;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -374,9 +372,9 @@ footer {
   flex-direction: column;
 }
 .list {
-  font-variant: var(--white-color);
-  padding-top: 50px;
-  padding-bottom: 94px;
+  background-color: var(--white-color);
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 .list-list {
   display: flex;
@@ -390,7 +388,7 @@ footer {
   width: 125px;
   height: 38px;
   flex-shrink: 0;
-  color: #212121;
+  color: #ffffff;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -404,8 +402,8 @@ footer {
   padding-right: 22px;
 }
 .list-button {
+  background-color: var(--background-color);
   border-radius: 4px;
-  background: #f5f4fa;
   width: 125px;
   height: 38px;
   flex-shrink: 0;
@@ -423,9 +421,15 @@ footer {
   padding-right: 22px;
 }
 .info {
-  background: var(--white-color);
+  background-color: var(--white-color);
   padding-top: 50px;
   padding-bottom: 94px;
+}
+.info-img {
+  height: 294px;
+  flex-shrink: 0;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  margin-bottom: 20px;
 }
 .info-name {
   color: var(--primary-color);
@@ -457,4 +461,8 @@ footer {
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.48px;
   width: 322px;
+}
+.info-item {
+  height: 404px;
+  flex-shrink: 0;
 }
