@@ -466,4 +466,6 @@ footer {
 .info-item {
   height: 404px;
   flex-shrink: 0;
+  max-width: 370px;
+  flex-basis: calc((100% - (30px * 2)) / 3);
 }
