@@ -446,6 +446,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  align-self: center;
 }
 .info-box {
   padding-left: 24px;
