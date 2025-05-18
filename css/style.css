@@ -323,6 +323,11 @@ header {
   background: url(./img/mihail.webp) lightgray -86.437px -3.457px / 196.208%
     136.002% no-repeat;
 }
+.team-item {
+    box-shadow: 0px 1px 3px 0px black,
+    0px 1px 1px 0px black, 0px 2px 1px 0px black;
+    border-radius: 0px 0px 4px 4px;
+}
 a {
   color: var(--primary-color);
 }
