@@ -228,20 +228,20 @@ header {
   margin-bottom: 29px;
 }
 .plan-item:first-child::before {
-  background: var(--background-color) url("../img/plan-antenna.png") no-repeat
+  background: var(--background-color) url("../img/plan-antenna.webp") no-repeat
     center;
 }
 .plan-item:nth-child(2)::before {
-  background: var(--background-color) url("../img/plan-clock.png") no-repeat
+  background: var(--background-color) url("../img/plan-clock.webp") no-repeat
     center;
 }
 .plan-item:nth-child(3)::before {
-  background: var(--background-color) url("../img/plan-diagram.png") no-repeat
+  background: var(--background-color) url("../img/plan-diagram.webp") no-repeat
     center;
 }
 .plan-item:last-child::before {
-  background: var(--background-color) url("../img/plan-astrotaut.png") no-repeat
-    center;
+  background: var(--background-color) url("../img/plan-astrotaut.webp")
+    no-repeat center;
 }
 .three {
   background: var(--white-color);
@@ -332,7 +332,8 @@ header {
     136.002% no-repeat;
 }
 .team-item {
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 a {
@@ -506,6 +507,8 @@ footer {
   height: 404px;
   flex-shrink: 0;
   max-width: 370px;
+}
+.info-item:hover {
   flex-basis: calc((100% - (30px * 2)) / 3);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
