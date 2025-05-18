@@ -179,7 +179,7 @@ header {
   padding-right: 25px;
 }
 .plan {
-  background: var(--background-color);
+  background: var(--white-color);
   padding-top: 94px;
 }
 .plan-name {
@@ -210,8 +210,35 @@ header {
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
 }
-.three {
+/* .plan-item {
+} */
+.plan-item::before {
+  content: "";
+  display: block;
   background: var(--background-color);
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 29px;
+}
+.plan-item:first-child::before {
+  background: var(--background-color) url("../img/plan-antenna.png") no-repeat
+    center;
+}
+.plan-item:nth-child(2)::before {
+  background: var(--background-color) url("../img/plan-clock.png") no-repeat
+    center;
+}
+.plan-item:nth-child(3)::before {
+  background: var(--background-color) url("../img/plan-diagram.png") no-repeat
+    center;
+}
+.plan-item:last-child::before {
+  background: var(--background-color) url("../img/plan-astrotaut.png") no-repeat
+    center;
+}
+.three {
+  background: var(--white-color);
   padding-top: 99px;
   padding-bottom: 94px;
 }
@@ -237,7 +264,7 @@ header {
   background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
 .team {
-  background: var(--background-color);
+  background: var(--white-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
