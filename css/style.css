@@ -269,6 +269,29 @@ header {
   flex-shrink: 0;
   background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
+.three-item {
+  position: relative;
+}
+.three-item > .three-text {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  top: 224px;
+  margin: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
 .team {
   background: var(--background-color);
   padding-top: 94px;
@@ -330,7 +353,7 @@ header {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-      background-color: var(--white-color);
+  background-color: var(--white-color);
 }
 .team-link {
   width: 44px;
@@ -342,7 +365,6 @@ header {
   background-color: #ffffff;
   margin-bottom: 30px;
   fill: #afb1b8;
-
 }
 .team-icon-list {
   display: flex;
@@ -354,10 +376,14 @@ header {
   width: 20px;
   height: 20px;
 }
-.team-link:hover, team-link:focus, team-icon-link:hover, team-icon-link:focus {
+.team-link:hover,
+team-link:focus,
+team-icon-link:hover,
+team-icon-link:focus {
   fill: white;
 }
-.team-link:hover, team-link:focus {
+.team-link:hover,
+team-link:focus {
   background-color: #2196f3;
 }
 a {
@@ -370,13 +396,12 @@ button {
 }
 
 footer {
-  background-color: #2F303A;
+  background-color: #2f303a;
   color: var(--white-color);
   flex-shrink: 0;
   padding-top: 60px;
   padding-bottom: 60px;
   height: 252px;
-  
 }
 .footer-name {
   color: var(--white-color);
@@ -440,23 +465,23 @@ footer {
 }
 .footer-container {
   display: flex;
-justify-items: flex-start;
+  justify-items: flex-start;
 }
 .footer-title {
-color: #FFF;
-font-family: "Roboto";
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.42px;
-text-transform: uppercase;
-margin-bottom: 20px;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .footer-icons-list {
-width: 20px;
-height: 20px;
-fill: white;
+  width: 20px;
+  height: 20px;
+  fill: white;
 }
 .footer-info {
   display: flex;
@@ -475,21 +500,22 @@ fill: white;
   margin-bottom: 20px;
 }
 .footer-icons-item {
-border-radius: 50%;
-background-color: rgba(255, 255, 255, 0.10);
-width: 44px;
-height: 44px;
-display: flex;
-align-items: center;
-justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.footer-icons-item:hover, footer-icons-item:focus {
-background-color: #2196F3;
+.footer-icons-item:hover,
+footer-icons-item:focus {
+  background-color: #2196f3;
 }
 .footer-icons-link {
-width: 20px;
-height: 20px;
-fill: white;
+  width: 20px;
+  height: 20px;
+  fill: white;
 }
 .footer-box {
 }
@@ -524,7 +550,7 @@ fill: white;
   padding-right: 22px;
 }
 .list-button {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   border-radius: 4px;
   width: 125px;
   height: 38px;
@@ -605,31 +631,32 @@ fill: white;
   gap: 30px;
 }
 .clients-title {
-color: var(--primary-color);
-text-align: center;
-font-family: "Roboto";
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 1.08px;
-margin-bottom: 50px;
+  color: var(--primary-color);
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
 }
 .item-clients {
-width: 170px;
-height: 92px;
-flex-shrink: 0;
-border-radius: 4px;
-border: 1px solid #AFB1B8;
-display: flex;
-justify-content: center;
-align-items: center;
-fill: #AFB1B8;
+  width: 170px;
+  height: 92px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
 }
-.item-clients:hover, item-clients:focus {
-border-radius: 4px;
-fill:#2196F3 ;
-border: 1px solid #2196F3;
+.item-clients:hover,
+item-clients:focus {
+  border-radius: 4px;
+  fill: #2196f3;
+  border: 1px solid #2196f3;
 }
 .header-contacts-icon {
   margin-right: 12px;
