@@ -43,7 +43,7 @@
               <a href="./portfolio.html" class="header-link">Портфоліо</a>
             </li>
             <li class="header-item">
-              <a href="#" class="header-link">Контакти</a>
+              <a href="#contacts" class="header-link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -69,7 +69,7 @@
     </header>
     <main>
       <!-- Секция 1 -->
-      <section class="hero">
+      <section class="hero" id="top">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero-button" data-modal-open>
@@ -89,21 +89,21 @@
             Залиште свої дані, ми вам передзвонимо
           </h3>
           <form action="" class="hero-form-modal">
-            <label class="hero-label-modal"> Ім'я </label>
+            <label class="hero-label-modal" required> Ім'я </label>
             <div class="modal-box">
               <svg class="hero-icon-modal">
                 <use href="./img/svg/symbol-defs.svg#icon-person"></use>
               </svg>
               <input type="text" class="hero-input-modal" />
             </div>
-            <label for="" class="hero-label-modal"> Телефон </label>
+            <label for="" class="hero-label-modal" required> Телефон </label>
             <div class="modal-box">
               <svg class="hero-icon-modal">
                 <use href="./img/svg/symbol-defs.svg#icon-phone-modal"></use>
               </svg>
               <input type="tel" class="hero-input-modal" />
             </div>
-            <label for="" class="hero-label-modal"> Пошта </label>
+            <label for="" class="hero-label-modal" required> Пошта </label>
             <div class="modal-box">
               <svg class="hero-icon-modal">
                 <use href="./img/svg/symbol-defs.svg#icon-email-modal"></use>
@@ -492,6 +492,7 @@
                   id=""
                   placeholder="E-mail"
                   class="footer-input"
+                  required
                 />
               </label>
               <button class="footer-button" type="submit">
@@ -505,6 +506,11 @@
         </div>
       </div>
     </footer>
+    <a class="scroll-top" href="#top">
+      <svg class="scroll-svg">
+        <use href="./img/svg/symbol-defs.svg#icon-up"></use>
+      </svg>
+    </a>
     <script src="./js/modal.js"></script>
   </body>
 </html>
