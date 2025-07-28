@@ -62,8 +62,8 @@ border-radius: 2px;
 background: var(--accent-color);
 content: "";
 position: absolute;
-top: 30px;
-left: 9%;
+top: 46px;
+left: 8.6%;
 display: none;
 }
 .header-link {
