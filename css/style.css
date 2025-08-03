@@ -25,8 +25,10 @@ header {
   border-bottom: 1px solid #ececec;
   position: fixed;
   z-index: 1;
-  width: 100%;
+  width: 1600px;
   backdrop-filter: blur(8px);
+  height: 80px;
+  flex-shrink: 0;
 }
 .header-contacts-link {
   color: var(--secondary-color);
@@ -217,8 +219,9 @@ transition: color 50ms 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 50ms 250ms cu
   margin-top: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 28px;
+  padding-right: 28px;
+  border-radius: 4px;
     transition: background-color 1s 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 1s 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .hero-button:hover {
@@ -618,6 +621,7 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
   height: 252px;
+  width: 1600px;
 }
 .footer-name {
   color: var(--white-color);
