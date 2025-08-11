@@ -63,22 +63,22 @@ position: relative;
   content: "";
   position: absolute;
 border-radius: 2px;
-top: 46px;
+top: 45.5px;
 left: 1.2px;
 background-color: var(--accent-color);
-width: 48px;
+width: 100%;
 height: 4px;
 
 }
 .header-link::after {
-width: 48px;
+width: 100%;
 height: 4px;
 flex-shrink: 0;
 border-radius: 2px;
 background: var(--accent-color);
 content: "";
 position: absolute;
-top: 46px;
+top: 45.5px;
 left: 1.2px;
 opacity: 0;
 transition: color 50ms 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 50ms 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
@@ -236,6 +236,9 @@ background-color: #3699ea;
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   padding: 14px 40px 40px 40px;
   z-index: 1;
+  transition-property: transform, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-close-modal {
   margin-left: 450px;
@@ -390,9 +393,16 @@ background-color: #3699ea;
   left: 0;
   right: 0;
   bottom: 0;
+  transition-property: opacity, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden .hero-modal {
+  transform: scale(0.5) translate(0, 500px) rotate(300deg);
 }
 .is-hidden {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
 }
 .plan {
   background: var(--white-color);
