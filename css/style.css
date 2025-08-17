@@ -29,6 +29,7 @@ header {
   backdrop-filter: blur(8px);
   height: 80px;
   flex-shrink: 0;
+  overflow: hidden;
 }
 .header-contacts-link {
   color: var(--secondary-color);
